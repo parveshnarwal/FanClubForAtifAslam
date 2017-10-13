@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home_header"
+        android:id="@+id/ivHomeHeader"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="15dp"
+        android:contentDescription="@string/app_name"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivHomeHeader">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnV"
+
+                android:text="@string/all_songs"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_width"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_round_shape"
+                android:shadowColor="#1E88E5"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                />
+
+            <Button
+                android:id="@+id/btnP"
+
+                android:text="@string/photos"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_width"
+                android:textAllCaps="false"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_round_shape"
+                android:shadowColor="#1E88E5"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                />
+
+            <Button
+                android:id="@+id/btnW"
+
+                android:text="@string/biography"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_width"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_round_shape"
+                android:shadowColor="#1E88E5"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                />
+
+            <Button
+                android:id="@+id/btnN"
+
+                android:text="@string/news"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:textSize="30sp"
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_width"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_round_shape"
+                android:shadowColor="#1E88E5"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                />
+
+
+            <Button
+                android:id="@+id/btnT"
+
+                android:text="@string/twitter"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_width"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_round_shape"
+                android:shadowColor="#1E88E5"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                />
+
+            <Button
+                android:id="@+id/btnF"
+
+                android:text="@string/facebook"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_width"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_round_shape"
+                android:shadowColor="#1E88E5"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                />
+
+            <Button
+                android:id="@+id/btnR"
+
+                android:text="@string/rate_us"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:textSize="30sp"
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_width"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_round_shape"
+                android:shadowColor="#1E88E5"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                />
+
+
+            <Button
+                android:id="@+id/btnS"
+
+                android:text="@string/share"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:textSize="30sp"
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_width"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_round_shape"
+                android:shadowColor="#1E88E5"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        android:layout_alignParentBottom="true"
+        ads:adUnitId="ca-app-pub-4327820221556313/1712137785"/>
+
+</RelativeLayout>

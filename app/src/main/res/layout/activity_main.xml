@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context="com.narwal.parvesh.fanclubforatifaslam.MainActivity">
+
+    <ImageView
+        android:id="@+id/ivHeader"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:src="@drawable/header"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"/>
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivHeader" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        android:layout_alignParentBottom="true"
+        ads:adUnitId="ca-app-pub-4327820221556313/9095803789"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Fan Club For Atif Aslam</string>
+    <string name="all_songs">All Songs</string>
+    <string name="photos">Photos</string>
+    <string name="biography">Biography</string>
+    <string name="twitter">Twitter</string>
+    <string name="imdb">IMDb</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="share">Share</string>
+    <string name="facebook">Facebook</string>
+    <string name="news">Latest News</string>
+</resources>
